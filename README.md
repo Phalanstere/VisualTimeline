@@ -10,7 +10,7 @@ To this purpose the <a href = "https://github.com/almende/vis">vis timeline libr
 For simlicities sake - there are so many dependencies involved - the libary was conceived as an npm module that can be installed easily, via:
 
 ```html
-	npm install visual-diary
+	npm install visual-timeline
 ```
 But soon there will be a conventional *.js libary added that works with a singe minified file.
 
