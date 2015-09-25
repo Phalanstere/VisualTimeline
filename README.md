@@ -23,7 +23,7 @@ However, to get a decent display, there are tow style sheet files to be added:
 
 ```
 
-In order to incorporate your images into the project, copy all folders in the **images** folder and run the following command:
+In order to incorporate your images into the project, copy all your files in the **images** folder and run the following command:
 
 ```html
 node node_modules/cluster-painter/create_cluster.js
@@ -90,8 +90,15 @@ $( document ).ready(function() {
 
 ```
 
-
 This code snippet creates the cluster painter area and links the image clusters to the timeline.
+Last thing you have to do is to browserify your project:
+
+
+ ```html
+browserify -t browserify-css index.js > bundle.js
+```
+
+
 
 Thast's it!
 
