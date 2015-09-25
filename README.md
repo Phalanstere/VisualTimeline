@@ -67,8 +67,6 @@ var ClusterPainter = require("cluster-painter");
 $( document ).ready(function() {
     "use strict";
     var bar, params, cluster;
-    
-    console.log("Jetzt im document ready Teil");
 
     cluster = new ClusterPainter({
                                        source: "cluster.json",  
@@ -78,15 +76,11 @@ $( document ).ready(function() {
                                        });
 
 
-    console.log("Der Cluster wird eingelesen");
-
-
     params = {
         directories: ["images1"],
         clusterPainter: cluster
                  
         };
-
 
     bar = new VisualTimebar.Bar(params);
 
