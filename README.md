@@ -14,18 +14,92 @@ For simlicities sake - there are so many dependencies involved - the libary was 
 ```
 But soon there will be a conventional *.js libary added that works with a singe minified file.
 
-However, to get a decent display, there is a css to be added:
+However, to get a decent display, there are tow style sheet files to be added:
 
 ```html
 
-	<link rel="stylesheet" href="node_modules/visual-timeline/css/visualTimeline.css">
+    <link rel="stylesheet" href="node_modules/cluster-painter/css/clusterPainter.css">
+    <link rel="stylesheet" href="node_modules/visual-timeline/css/visualTimeline.css">
+
+```
+
+In order to incorporate your images into the project, copy all folders in the **images** folder and run the following command:
+
+```html
+node node_modules/cluster-painter/create_cluster.js
+
+``` 
+
+To get the library running, create the following mininal framework
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>VisualTimeline</title>
+
+    <link rel="stylesheet" href="node_modules/cluster-painter/css/clusterPainter.css">
+    <link rel="stylesheet" href="node_modules/visual-timeline/css/visualTimeline.css">
+    <link href="node_modules/vis/dist/vis.min.css" rel="stylesheet" type="text/css" />
+    
+    <script src="bundle.js"></script> 
+    
+	<div id="scenery"></div>	
+	<div id = "timeline_trigger"></div>
+	<div id="visualization"></div>
+
+   
+  </body>
+</html>
+```
+
+Then add an index.js file and define your object:
+
+ ```javascript
+var vis   = require('./lib/vis.min.js');
+var util            = require("util");
+var $               = require('jquery');
+var VisualTimebar   = require('./node_modules/visual-timeline/lib/VisualTimebar.js');
+var ClusterPainter = require("cluster-painter");
+
+
+$( document ).ready(function() {
+    "use strict";
+    var bar, params, cluster;
+    
+    console.log("Jetzt im document ready Teil");
+
+    cluster = new ClusterPainter({
+                                       source: "cluster.json",  
+                                       css_class: "standard",
+                                       div: "scenery",
+                                       type: "default"
+                                       });
+
+
+    console.log("Der Cluster wird eingelesen");
+
+
+    params = {
+        directories: ["images1"],
+        clusterPainter: cluster
+                 
+        };
+
+
+    bar = new VisualTimebar.Bar(params);
+
+
+    });
+
 
 ```
 
 
+This code snippet creates the cluster painter area and links the image clusters to the timeline.
 
- 
+Thast's it!
 
+This README is a preliminary version that will be improved soon.
 
-
-  
