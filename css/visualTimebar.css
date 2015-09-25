@@ -1,0 +1,84 @@
+.vis
+{
+font-family: "Inconsolata";	
+color: silver;
+}
+
+.vis-text
+{
+font-family: "Inconsolata";	
+color: silver;	
+}
+
+.vis-item .vis-item-content
+{
+font-family: "Inconsolata";	
+padding: 2px;
+font-weight: 600;
+font-size: 14px;
+background: rgb(32,32,32);
+color: white;
+}
+
+
+.vis-item .vis-item-content:hover
+{
+cursor: pointer;	
+font-weight: 800;
+font-size: 14px;
+border:solid 2px darkgray;
+background: silver;
+color: black;
+padding: 2px;	
+}
+
+.vis-item .vis-selected
+{ 
+
+}
+
+body
+{
+overflow: hidden;	
+}
+
+
+#scenery
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgb(32,32,32);
+overflow: hidden;
+}	
+
+
+#visualization
+{
+position: absolute;
+width: 100%;
+height: 12%;
+bottom: 0%;
+left: 0;
+background: rgba(0,0,0,0.7);
+box-shadow: 0 0 10px black;
+z-index: 2;
+}
+
+#visualization:hover
+{
+opacity: 1;	
+}
+
+
+#timeline_trigger
+{
+position: absolute;
+width: 100%;
+height: 13%;
+bottom: 0;
+left: 0;
+z-index: 1;
+};

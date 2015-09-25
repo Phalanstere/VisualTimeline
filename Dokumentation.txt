@@ -1,0 +1,5 @@
+Der Browserify-Befehl sieht jetzt so aus:
+$ browserify -t brfs browserify-css index.js > lib/bundle.js // obsolet
+
+
+ browserify -t browserify-css index.js > lib/bundle.js
