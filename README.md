@@ -1,5 +1,4 @@
 # VisualTimeline
-Picture Chronology / a tool that can be used as a visual diary or an image organizer
 
 The basic idea of this package is to organize visual data on a timeline.
 To this purpose the <a href = "https://github.com/almende/vis">vis timeline library</a> was used, as well as the <a href = "https://github.com/Phalanstere/ClusterPainter">cluster painter module</a> that dislays time clustered images.
@@ -8,6 +7,41 @@ To this purpose the <a href = "https://github.com/almende/vis">vis timeline libr
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/VisualTimebar2.png">
 
 ##browser integration
+
+Download the *.zip file. 
+Copy the the css and lib folder into your home directory.
+
+Then create an index file. A minimal version looks like this.
+
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>VisualTimeline</title>
+
+    <link rel="stylesheet" href="css/clusterPainter.css">
+    <link rel="stylesheet" href="css/visualTimeline.css">
+    <link href="css/vis.min.css" rel="stylesheet" type="text/css" />
+    
+    <script src="lib/vis.min.js"></script> 
+    <script src="lib/bundle.min.js"></script> 
+    
+	<div id="scenery"></div>	
+	<div id = "timeline_trigger"></div>
+	<div id="visualization"></div>
+
+   
+  </body>
+</html>
+
+```
+
+This version does not allow any confirmation. However, it has the advantage that you are rerady to use it without further ado.
+The only thing you **have to do** is to copy all your images into an **images** folder and then open the **converer.html** file.
+
 
 
 ##npm version
