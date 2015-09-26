@@ -1,31 +1,41 @@
 {
-  "name": "VisualTimebar",
-  "description": "A visual Diary",
-  "version": "0.0.1",
-  "author": "Phalanstere",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Phalanstere/VisualTimebar/issues"
+  "name": "visual-timeline",
+  "version": "0.0.2",
+  "description": "A visual organizer that arranges image clusters on a timeline",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
   },
   "dependencies": {
-    "jquery": "^2.1.3",
-    "gm": "^1.9.0",
+    "cluster-painter":  "^1.0.1",
+    "jquery": "^2.1.4",
+    "time-cluster": "^0.0.1",
     "vis": "^4.8.2",
-    "babelify": "^6.0.0",
-	"browserify-fs": "^1.0.0",
-	"time-cluster": "^0.0.1",
-	"cluster-painter":  "^1.0.1"
+    "visual-data": "^0.0.4"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify-css": "^0.7.1",
+    "browserify-fs": "^1.0.0"
+    },
+  "scripts": {
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Phalanstere/VisualTimebar.git"
+    "url": "git+https://github.com/Phalanstere/VisualTimeline.git"
   },
-    "scripts": {
-  "test": "mocha"
+  "keywords": [
+    "vis",
+    "timeline",
+    "images",
+    "cluster",
+    "cluster-painter"
+  ],
+  "author": "phalanstere <burckhardt@ludicmedia.de> (https://github.com/Phalanstere)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Phalanstere/VisualTimeline/issues"
   },
-  "devDependencies": {
-    "browserify-css": "~0.7.1",
-    "chai": "3.x.x",
-  	"mocha": "2.x.x"
-  }
+  "homepage": "https://github.com/Phalanstere/VisualTimeline#readme"
 }

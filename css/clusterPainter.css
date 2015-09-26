@@ -1,0 +1,187 @@
+#container
+{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 64px;
+background: rgb(32,32,32);	
+}
+
+
+#scenery
+{
+position: absolute;
+left: 0;
+top: 64px;
+width: 100%;
+height: 97%;
+background: rgb(92,92,92);	
+}
+
+
+#filmstage
+{
+position: absolute;
+top: 90px;
+height:644px;
+left: 0;
+width: 100%;
+background-color: rgb(32,32,32);
+z-index: 2;
+}
+
+#filmstill
+{
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 60%;
+height: 80%;
+}
+
+#filmstill img
+{
+width: 100%;
+height: auto;	
+box-shadow: 5px 5px 10px black;
+}
+
+
+.standard
+{
+position: absolute;
+top: 90px;
+left: -1900px;
+width: 600px;
+height: auto; 	
+/* border:solid 5px white; */
+
+
+box-shadow: 2px 2px 3px rgba(32,32,32,1);
+}
+
+.standard img
+{
+width: 100%;
+height: auto;	
+}
+
+
+.foto
+{
+position: absolute;
+top: 90px;
+left: -1900px;
+width: 320px;
+height: auto; 	
+/* border:solid 4px black; */
+box-shadow: 0 0 6px black;
+}
+
+.foto img
+{
+width: 100%;
+height: auto;	
+}
+
+
+.filmsnippet
+{
+position: absolute;
+left: 0;
+top: 0;
+height: 120px;
+width: auto;
+background-image: url("film_strip.png");
+background-size: auto 100%;
+border-right: solid 8px black;
+border-left: solid 8px black;
+background-position: 90%; 
+}
+
+.filmsnippet img
+{
+margin-top: 12%;	
+width: auto;
+height: 70%;	
+}
+
+
+
+.tilted
+{
+position: absolute;
+top: 90px;
+left: 100px;
+width: 600px;
+height: auto; 
+border:solid 6px white;
+opacity: 0.5;
+}
+
+.tilted img
+{
+width: 100%;
+height: auto;	
+}
+
+
+
+
+
+
+.temp
+{
+position: relative;
+float: left;
+margin-left: 20px;
+margin-top: 30px;
+width: 300px;
+height: auto; 	
+}
+
+.temp img
+{
+width: 100%;
+height: auto;	
+}
+
+
+
+body
+{
+overflow: hidden;
+}
+
+.button
+{
+width: auto;
+height: auto;
+padding: 6px;
+font-size: 12px;
+float: left;
+margin-left: 20px;
+margin-top: 20px;
+background: orange;
+font-size: 1.2em;
+}
+
+.button:hover
+{
+background: darkcyan;	
+cursor: pointer;
+}
+
+
+#Types
+{
+margin-left: 100px;
+margin-top: 25px;
+font-family: "Inconsolata";
+font-size: 18px;
+background: darkgray;	
+}

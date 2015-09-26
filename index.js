@@ -1,5 +1,6 @@
 var util            = require("util");
 var $               = require('jquery');
+
 var VisualTimebar   = require('./lib/VisualTimebar.js');
 var ClusterPainter = require("cluster-painter");
 
@@ -12,7 +13,7 @@ $( document ).ready(function() {
                                        source: "cluster.json",  
                                        css_class: "standard",
                                        div: "scenery",
-                                       type: "default"
+                                       type: "film"
                                        });
 
 
@@ -31,3 +32,4 @@ $( document ).ready(function() {
 
 
     });
+    
