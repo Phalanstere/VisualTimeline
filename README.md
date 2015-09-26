@@ -39,8 +39,14 @@ Then create an index file. A minimal version looks like this.
 
 ```
 
-This version does not allow any configuration of the *.js object. However, it has the advantage that you are rerady to use it without further ado.
-The only thing you **have to do** is to copy all your images into an **images** folder and then open the **converer.html** file.
+This version does not allow any configuration of the \*.js object. However, it has the advantage that you are rerady to use it without further ado.
+The only thing you **have to do** is to copy all your images into an **images** folder and then write:
+
+```html
+node node_modules/cluster-painter/create_cluster.js
+```
+
+This demands that you have node.js installed.
 
 If you want to improve the styling, you are free to do so.
 
