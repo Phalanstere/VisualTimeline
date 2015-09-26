@@ -6,7 +6,12 @@ To this purpose the <a href = "https://github.com/almende/vis">vis timeline libr
 
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/VisualTimebar2.png">
 
-##browser integration
+##Demo
+
+You can find a demo <a href = "http://burckhardt.ludicmedia.de/visual_timeline/">here</a>
+
+
+##Browser Integration
 
 Download the *.zip file. 
 Copy the the css and lib folder into your home directory.
@@ -39,7 +44,7 @@ Then create an index file. A minimal version looks like this.
 
 ```
 
-This version does not allow any configuration of the \*.js object. However, it has the advantage that you are rerady to use it without further ado.
+This version does not allow any configuration of the \*.js object. However, it has the advantage that you are ready to use it without further ado.
 The only thing you **have to do** is to copy all your images into an **images** folder and then write:
 
 ```html
