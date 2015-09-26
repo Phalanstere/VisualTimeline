@@ -66,9 +66,8 @@ For simplicities sake - there are so many dependencies involved - the libary was
 ```html
 	npm install visual-timeline
 ```
-But soon there will be a conventional *.js libary added that works with a singe minified file.
 
-However, to get a decent display, there are tow style sheet files to be added:
+However, to get a decent display, there are two style sheet files to be added:
 
 ```html
 
@@ -126,7 +125,7 @@ $( document ).ready(function() {
                                        source: "cluster.json",  
                                        css_class: "standard",
                                        div: "scenery",
-                                       type: "default"
+                                       type: "default"  // you can use foto or film too
                                        });
 
 
