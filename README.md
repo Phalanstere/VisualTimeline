@@ -39,8 +39,11 @@ Then create an index file. A minimal version looks like this.
 
 ```
 
-This version does not allow any confirmation. However, it has the advantage that you are rerady to use it without further ado.
+This version does not allow any configuration of the *.js object. However, it has the advantage that you are rerady to use it without further ado.
 The only thing you **have to do** is to copy all your images into an **images** folder and then open the **converer.html** file.
+
+If you want to improve the styling, you are free to do so.
+
 
 
 
