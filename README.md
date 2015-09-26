@@ -4,10 +4,16 @@ Picture Chronology / a tool that can be used as a visual diary or an image organ
 The basic idea of this package is to organize visual data on a timeline.
 To this purpose the <a href = "https://github.com/almende/vis">vis timeline library</a> was used, as well as the <a href = "https://github.com/Phalanstere/ClusterPainter">cluster painter module</a> that dislays time clustered images.
 
+
 <img src="http://burckhardt.ludicmedia.de/ClusterPainter/VisualTimebar2.png">
 
+##browser integration
 
-For simlicities sake - there are so many dependencies involved - the libary was conceived as an npm module that can be installed easily, via:
+
+##npm version
+
+
+For simplicities sake - there are so many dependencies involved - the libary was conceived as an npm module that can be installed easily, via:
 
 ```html
 	npm install visual-timeline
