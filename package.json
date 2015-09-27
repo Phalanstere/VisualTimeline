@@ -1,13 +1,13 @@
 {
   "name": "visual-timeline",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "A visual organizer that arranges image clusters on a timeline",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
-    "cluster-painter":  "^1.0.1",
+    "cluster-painter":  "^1.0.11",
     "jquery": "^2.1.4",
     "time-cluster": "^0.0.1",
     "vis": "^4.8.2",
